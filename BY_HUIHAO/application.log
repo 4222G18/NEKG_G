@@ -347,3 +347,4 @@ INFO -
 ------ Initializer -----
 INFO - Name : xavier
 INFO - uniform : False
+WARNING - No random seed is specified. This may lead to non-reproducible results.
