@@ -10,3 +10,35 @@ INFO -
 ------ Initializer -----
 INFO - Name : xavier
 INFO - uniform : False
+INFO - downloading data from https://samwald.info/res/OpenBioLink_2020_final/HQ_DIR.zip to /home/egbert_jing/.data/pykeen/datasets/openbiolink/HQ_DIR.zip
+INFO - downloading with urllib from https://samwald.info/res/OpenBioLink_2020_final/HQ_DIR.zip to /home/egbert_jing/.data/pykeen/datasets/openbiolink/HQ_DIR.zip
+INFO - downloading data from https://samwald.info/res/OpenBioLink_2020_final/HQ_DIR.zip to /home/egbert_jing/.data/pykeen/datasets/openbiolink/HQ_DIR.zip
+INFO - downloading with urllib from https://samwald.info/res/OpenBioLink_2020_final/HQ_DIR.zip to /home/egbert_jing/.data/pykeen/datasets/openbiolink/HQ_DIR.zip
+INFO - downloading data from https://samwald.info/res/OpenBioLink_2020_final/HQ_DIR.zip to /home/egbert_jing/.data/pykeen/datasets/openbiolink/HQ_DIR.zip
+INFO - downloading with urllib from https://samwald.info/res/OpenBioLink_2020_final/HQ_DIR.zip to /home/egbert_jing/.data/pykeen/datasets/openbiolink/HQ_DIR.zip
+INFO - downloading data from https://samwald.info/res/OpenBioLink_2020_final/HQ_DIR.zip to /home/egbert_jing/.data/pykeen/datasets/openbiolink/HQ_DIR.zip
+INFO - downloading with urllib from https://samwald.info/res/OpenBioLink_2020_final/HQ_DIR.zip to /home/egbert_jing/.data/pykeen/datasets/openbiolink/HQ_DIR.zip
+INFO - 
+--------- Loss ---------
+INFO - Name : nll
+INFO - eta : 2
+INFO - 
+------ Optimizer -----
+INFO - Name : adam
+INFO - lr : 0.0005
+INFO - 
+------ Initializer -----
+INFO - Name : xavier
+INFO - uniform : False
+INFO - 
+--------- Loss ---------
+INFO - Name : nll
+INFO - eta : 2
+INFO - 
+------ Optimizer -----
+INFO - Name : adam
+INFO - lr : 0.0005
+INFO - 
+------ Initializer -----
+INFO - Name : xavier
+INFO - uniform : False
