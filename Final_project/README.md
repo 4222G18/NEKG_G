@@ -91,4 +91,4 @@ For the reality scenario task, we uses `df_with_gcs` that contains numbers. Its 
 
 
 ## 8.Conclusion
-we draw the following two main conclusions from our study (1): we prove that Number Embedding based on Knowledge Graph (NEKG) can improve downstream task's performance.(2): by changing knowledge graph embedding method, both the downstrem task's accuracy and probe task's accuracy can be improved further.
+we draw the following two main conclusions from our study  (1) we find that TransE is not stable when the number of entities is large, such as start=0, end=999, step=1. while some other embedding methods like ComlEx can relieve this problem. (2): we verufy that Number Embedding based on Knowledge Graph (NEKG) can improve downstream task's performance. (3): by changing the knowledge graph embedding method, both the downstrem task's accuracy and probe task's accuracy can be improved further.
