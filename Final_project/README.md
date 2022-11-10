@@ -4,7 +4,7 @@
 
 ## 1.Background
 
-Numbers matter. Considering the ubiquity of numbers and their basic differences. In other words, enabling NLP systems to effectively represent their benefits in fields such as science and finance, Literature, Digital understanding also helps detect sarcasm and analog conversations Involve price negotiations.
+Numbers matter. Considering the ubiquity of numbers and their basic differences. In other words, enabling NLP systems to effectively represent their benefits in fields such as science and finance, Literature, Digital understanding also helps detect sarcasm and analog conversations Involve price negotiations. d. While number is critical in these domains, most existing NLP models such as BERT are not designed explicitly to handle numbers.
 
 ## 2.Proposal
 
@@ -14,12 +14,13 @@ In traditional NLP tasks, when we are doing word embedding, we often convert it 
 
 ## 3.Methodology
 
-The project will Combined including some open source toolkit like OpenKe, Keras, ampligraph to make our model library rich enough, And use TSNE to preliminary review and filter the relatively ideal model, Then the selected embedding will apply on the medical reality scenario based on the word2vec model, to check whether this method is improving the performance of the original model facing numerically sensitive data sets.
+The project will Combined including some open source toolkit like OpenKe, Keras, ampligraph to make our model library rich enough, And use TSNE to preliminary visualize, review and filter the relatively ideal model. Then the selected number embedding methods will apply on the medical reality scenario together with the word2vec, to check whether this method is improving the performance of the original model facing numerically sensitive datasets.
 
 ## 4.Evaluation
 
-- Core task: Apply the NEKG to do the numeracy embedding, and apply it to a medical reality scenario to check the score_list, for this task, the paper has explored the different performaance when applying different String-based methods, here we'll focus the specific word2vec model to be the basis of our model, we'll try to analysis and  improve the exicting embedding model(TransE) with applying other more complex embeddding(Like TransD, TransH)
-- Downstream task: we will continue the work on the paper,''''''''''''''''
+- Core task: firstly, apply the Number Embedding based on Knowledge Graph method(NEKG) to embed numbers, and apply these number embeddings to a medical reality scenario to prove the usefulness of NEKG. Secondly, we'll try to analyze and  improve the existing knowledge graph embedding method(TransE) in NEKG by applying other more complex kg embeddding methods(Like TransD, TransH) or modifying TransE's loss function. We will evaluate each variants' performances based on list maximum, decoding, addition tasks which is used in the original paper and the medical downstream task mentioned above.
+
+- Downstream task: based on the NEKG method, the original paper has shown its usefulness in a series of numeracy tasks. We want to show whether NEKG can improve the accuracy of nlp tasks in the real application. Therefore, we carry out a binary label task in a medical scenario. We have a medical dataset, where texts are notes commentting on the conodition of patients and labels are whether patients can leave the hospital. In the texts, there is an idicator called "gcs + a number" . It shows the degree of patient's coma and ranges from 1-14, which is closely related to whether patients can leave. From the intuition, we think including the number embedding can improve the result.
 
 ## 5.Code Structure
 
@@ -34,9 +35,9 @@ Toolkit to make embeddings: `./Openke`
 
 ## 6.Dataset
 
-For the numeracy embedding step, we mock a `1000*100` DataFrame to train the embedding. And apply ISNE to preliminary review and filter the relatively ideal model
+For the number embedding step, we construct a simple knowledge graph to train the embedding. And apply TSNE to preliminary visualize, review and filter the relatively ideal model
 
-For the reality scenario test, we apply `df_with_gcs` which is a dataset that is highly sensitive to numbers
+For the reality scenario task, we uses `df_with_gcs` that contains numbers. Its text data are notes commentting on the conodition of patients and labels are whether patients can leave the hospital. In the texts, there is an idicator called "gcs + a number" . It shows the degree of patient's coma and ranges from 1-14, which is closely related to whether patients can leave.
 
 ## 7.Result
 
