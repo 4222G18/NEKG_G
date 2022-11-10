@@ -32,6 +32,7 @@ Embedding: `./embedding`
 database of the medical reality scenario: `df_with_gcs`
 Performance database of the medical reality scenario: `./performance`
 Toolkit to make embeddings: `./Openke`
+probe task(Downstream task): `./probe_task`
 
 ## 6.Dataset
 
@@ -69,33 +70,24 @@ For the reality scenario task, we uses `df_with_gcs` that contains numbers. Its 
 
 #### Istm-NEKG performance(After selection)
 
-- word2vec without NEKG (accuracy:0.670175439119339)
-![avatar](./Assets/word2vec_acc.png)
-![avatar](./Assets/word2vec_loss.png)
+- `Baseline_1`: word2vec without NEKG (accuracy: 0.6757634878158569)
 
-- TransE 1-999 word2vec 100d (accuracy:0.6859649181365967)
-![avatar](./Assets/istm_nekg_transe_SGD_acc.png)
-![avatar](./Assets/istm_nekg_transe_SGD_loss.png)
+- `Baseline_2`: word2vec without random_number embedding (accuracy: 0.6894087062941657)
 
-- TransD 1-999 word2vec 100d (accuracy:0.6970760285854339)
-![avatar](./Assets/istm_nekg_transd_SGD_acc.png)
-![avatar](./Assets/istm_nekg_transd_SGD_loss.png)
+- `Model_1`: TransE 1-999 word2vec 100d (accuracy: 0.7179986900753446)
 
-- TransH 1-999 word2vec 100d (accuracy:0.6970760285854339)
-![avatar](./Assets/istm_nekg_transh_SGD_acc.png)
-![avatar](./Assets/istm_nekg_transh_SGD_loss.png)
+- `Model_2`: TransD 1-999 word2vec 100d (accuracy: 0.7128005226453146)
 
-- RESCAL 1-999 word2vec 100d adagrad (accuracy:0.6865497171878815)
-![avatar](./Assets/lstm-NEKG-gcs-RESCAL_adagrad_acc.png)
-![avatar](./Assets/lstm-NEKG-gcs-RESCAL_adagrad_loss.png)
+- `Model_3`: TransH 1-999 word2vec 100d (accuracy: 0.7179987033208212)
 
-- SimplE 1-999 word2vec 100d (accuracy:0.6853801250457764)
-![avatar](./Assets/lstm-NEKG-gcs-SimplE_acc.png)
-![avatar](./Assets/lstm-NEKG-gcs-SimplE_loss.png)
+- `Model_4`: RESCAL 1-999 word2vec 100d adagrad (accuracy: 0.7063027951452467)
 
-- Dice 1-999 word2vec 100d (accuracy:0.689473682641983)
-![avatar](./Assets/dice_acc.png)
-![avatar](./Assets/dice_loss.png)
+- `Model_5`: SimplE 1-999 word2vec 100d (accuracy: 0.7134502993689643)
+
+- `Model_6`: Dice 1-999 word2vec 100d (accuracy: 0.7296946114963956)
 
 ## 8.Conclusion
-........................
+
+###### We draw the following two major conclusions from our study: 
+###### (1) 
+###### (2) 
