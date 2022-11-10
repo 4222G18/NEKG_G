@@ -42,6 +42,27 @@ For the reality scenario task, we uses `df_with_gcs` that contains numbers. Its 
 
 ## 7.Result
 
+### probe task performance
+find the index of the maximum number in a list with 5 elements
+
+number range: 0-999
+-random: 0.7968
+-TransE: 0.8442
+-ComplEx: 0.8771
+-Convolutional 2D KG Embeddings: 0.8355
+-Convolution-based model: 0.8896
+-Dismult: 0.8630
+-Hole: 0.8697
+
+number range: 0-99
+-random: 0.9104
+-TransE: 0.9229
+-ComplEx: 0.9475
+-Convolutional 2D KG Embeddings: 0.8976
+-Convolution-based model: 0.9389
+-Dismult: 0.9457
+-Hole: 0.9398
+
 #### TSNE performance
 
 - TransE 1-999 100d(loss = 'self_adversarial')
@@ -88,6 +109,5 @@ For the reality scenario task, we uses `df_with_gcs` that contains numbers. Its 
 
 ## 8.Conclusion
 
-###### We draw the following two major conclusions from our study: 
-###### (1) 
-###### (2) 
+we draw the following two main conclusions from our study  (1) we find that TransE is not stable when the number of entities is large, such as start=0, end=999, step=1. while some other embedding methods like ComlEx can relieve this problem. (2): we verufy that Number Embedding based on Knowledge Graph (NEKG) can improve downstream task's performance. (3): by changing the knowledge graph embedding method, both the downstrem task's accuracy and probe task's accuracy can be improved further.
+
