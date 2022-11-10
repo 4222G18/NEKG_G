@@ -93,7 +93,7 @@ number range: 0-99
 
 - `Baseline_1`: word2vec without NEKG (accuracy: 0.6757634878158569)
 
-- `Baseline_2`: word2vec without random_number embedding (accuracy: 0.6894087062941657)
+- `Baseline_2`: word2vec with random_number embedding (accuracy: 0.6894087062941657)
 
 - `Model_1`: TransE 1-999 word2vec 100d (accuracy: 0.7179986900753446)
 
