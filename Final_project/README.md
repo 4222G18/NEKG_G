@@ -14,7 +14,7 @@ In traditional NLP tasks, when we are doing word embedding, we often convert it 
 
 ## 3.Methodology
 
-The project will Combined including some open source toolkit like OpenKe, Keras, ampligraph to make our model library rich enough, And use TSNE to preliminary visualize, review and filter the relatively ideal model. Then the selected number embedding methods will apply on the medical reality scenario together with the word2vec, to check whether this method is improving the performance of the original model facing numerically sensitive datasets.
+The project will include some open source toolkit like OpenKe, Keras, ampligraph to make our model library rich enough, and use TSNE to preliminary visualize, review and filter the relatively ideal model. Then the selected number embedding methods will apply on the medical reality scenario together with the word2vec, to check whether this method is improving the performance of the original model facing numerically sensitive datasets.
 
 ## 4.Evaluation
 
