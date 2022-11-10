@@ -1,3 +1,0 @@
-2
-isLessThan	1
-isLargeThan  0
