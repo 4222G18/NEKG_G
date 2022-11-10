@@ -70,32 +70,25 @@ For the reality scenario task, we uses `df_with_gcs` that contains numbers. Its 
 #### Istm-NEKG performance(After selection)
 
 - word2vec without NEKG (accuracy:0.670175439119339)
-![avatar](./Assets/word2vec_acc.png)
-![avatar](./Assets/word2vec_loss.png)
+
 
 - TransE 1-999 word2vec 100d (accuracy:0.6859649181365967)
-![avatar](./Assets/istm_nekg_transe_SGD_acc.png)
-![avatar](./Assets/istm_nekg_transe_SGD_loss.png)
+
 
 - TransD 1-999 word2vec 100d (accuracy:0.6970760285854339)
-![avatar](./Assets/istm_nekg_transd_SGD_acc.png)
-![avatar](./Assets/istm_nekg_transd_SGD_loss.png)
+
 
 - TransH 1-999 word2vec 100d (accuracy:0.6970760285854339)
-![avatar](./Assets/istm_nekg_transh_SGD_acc.png)
-![avatar](./Assets/istm_nekg_transh_SGD_loss.png)
+
 
 - RESCAL 1-999 word2vec 100d adagrad (accuracy:0.6865497171878815)
-![avatar](./Assets/lstm-NEKG-gcs-RESCAL_adagrad_acc.png)
-![avatar](./Assets/lstm-NEKG-gcs-RESCAL_adagrad_loss.png)
+
 
 - SimplE 1-999 word2vec 100d (accuracy:0.6853801250457764)
-![avatar](./Assets/lstm-NEKG-gcs-SimplE_acc.png)
-![avatar](./Assets/lstm-NEKG-gcs-SimplE_loss.png)
+
 
 - Dice 1-999 word2vec 100d (accuracy:0.689473682641983)
-![avatar](./Assets/dice_acc.png)
-![avatar](./Assets/dice_loss.png)
+
 
 ## 8.Conclusion
-........................
+we draw the following two main conclusions from our study (1): we prove that Number Embedding based on Knowledge Graph (NEKG) can improve downstream task's performance.(2): by changing knowledge graph embedding method, both the downstrem task's accuracy and probe task's accuracy can be improved further.
