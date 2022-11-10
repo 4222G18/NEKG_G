@@ -22,9 +22,11 @@ The project will Combined including some open source toolkit like OpenKe, Keras,
 - Downstream task: we will continue the work on the paper,''''''''''''''''
 
 ## 5.Code Structure
+
 ```
 cd Final_project
 ```
+
 Embedding: `./embedding`
 database of the medical reality scenario: `df_with_gcs`
 Performance database of the medical reality scenario: `./performance`
