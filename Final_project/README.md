@@ -111,3 +111,7 @@ number range: 0-99
 
 we draw the following two main conclusions from our study  (1) we find that TransE is not stable when the number of entities is large, such as start=0, end=999, step=1. while some other embedding methods like ComlEx can relieve this problem. (2): we verufy that Number Embedding based on Knowledge Graph (NEKG) can improve downstream task's performance. (3): by changing the knowledge graph embedding method, both the downstrem task's accuracy and probe task's accuracy can be improved further.
 
+
+## 9.Reference
+
+Thawani, A., Pujara, J., Szekely, P. A., & Ilievski, F. (2021). Representing numbers in NLP: a survey and a vision. arXiv preprint arXiv:2103.13136.
