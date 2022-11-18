@@ -4,10 +4,10 @@ import json
 import os 
 os.environ['CUDA_VISIBLE_DEVICES']='0'
 con = config.Config()
-con.set_in_path("./benchmarks/data_try/")
+con.set_in_path("./benchmarks/data_99/")
 con.set_work_threads(8)
 con.set_train_times(100)
-con.set_nbatches(100)	
+con.set_nbatches(50)	
 con.set_alpha(0.01)
 con.set_bern(0)
 con.set_dimension(50)
@@ -28,10 +28,10 @@ transe_state_dict = con.train()
 
 
 conR = config.Config()
-conR.set_in_path("/benchmarks/data_try/")
+conR.set_in_path("/benchmarks/data_99/")
 conR.set_work_threads(8)
 conR.set_train_times(100)
-conR.set_nbatches(100)	
+conR.set_nbatches(50)	
 conR.set_alpha(0.01)
 conR.set_bern(0)
 conR.set_dimension(50)

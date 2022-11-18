@@ -4,9 +4,9 @@ import json
 import os 
 os.environ['CUDA_VISIBLE_DEVICES']='0'
 con = config.Config()
-con.set_in_path("./benchmarks/data_try/")
+con.set_in_path("./benchmarks/data_9999/")
 con.set_work_threads(8)
-con.set_train_times(1000)
+con.set_train_times(100)
 con.set_nbatches(100)	
 con.set_alpha(0.001)
 con.set_bern(0)
