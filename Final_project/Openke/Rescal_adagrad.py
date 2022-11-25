@@ -2,12 +2,13 @@ import config
 from  models import *
 import json
 import os 
+range = '99'
 os.environ['CUDA_VISIBLE_DEVICES']='0'
 con = config.Config()
-con.set_in_path("./benchmarks/data_9999/")
+con.set_in_path("./benchmarks/data_{range}/".format(range=range))
 con.set_work_threads(8)
 con.set_train_times(100)
-con.set_nbatches(100)	
+con.set_nbatches(50)	
 con.set_alpha(0.1)
 con.set_bern(0)
 con.set_dimension(100)
